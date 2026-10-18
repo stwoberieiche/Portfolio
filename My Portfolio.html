@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+
+    <style>
+        header {
+            background-image: url("cover.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+            height: 225px;
+            padding: 0px;
+            border-radius: 13px;
+            position: relative;
+        }
+        .welcome {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            font-weight: bold;
+            color: #6D214F;
+            top: 5px;
+            text-align: center;
+            top: 7px;
+            left: 30.5%;
+            width: 37%;
+            margin: 0px;
+            padding: 3px 8px;
+            border: 2px solid #6D214F;
+            border-radius: 13px;
+            background-color: #FFF0F5;
+            position: absolute;
+        }
+        .profile {
+            background-image: url("profile.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+            border-radius: 200px;
+            width: 175px;
+            height: 175px;
+            top: 93px;
+            left: 43.4%;
+            border: 4px solid #FFD1DC;
+            box-shadow: 0 0 30px #6D214F;
+            position: absolute;
+        }
+        .name {
+            font-family: 'Playfair Display', serif;
+            font-size: 37px;
+            font-weight: bold;
+            color: #6D214F;
+            top: 280px;
+            text-align: center;
+            position: relative;
+        }
+        .it {
+            font-family: 'Playfair Display', serif;
+            font-size: 17px;
+            color: #6D214F;
+            top: 283px;
+            text-align: center;
+            position: relative;
+        }
+        body {
+            background-color: #FFD1DC;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        nav {
+            text-align: center;
+            margin-top: 162px;
+        }
+        nav a {
+            color: #6D214F;
+            text-decoration: none;
+            font-family: Georgia, serif;
+            border: 2px solid #6D214F;
+            border-radius: 15px;
+            margin: 10px;
+            padding: 8px;
+        }
+        nav a:hover {
+            border-radius: 15px;
+            box-shadow: 0 0 20px #6D214F;
+        }
+        #about {
+            background-color: #FFF0F5;
+            color: #6D214F;
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            padding: 35px 0px;
+            margin: 28px 0px;
+            border: 2px solid #6D214F;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px #6D214F40;
+        }
+        #about h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 33px;
+            margin-top: 0;
+            top: -15px;
+            position: relative;
+        }
+        #about p {
+            font-size: 17px;
+            margin: 0px 50px;
+            margin-top: -40px;
+            padding: 10px;
+        }
+        #skills {
+            background-color: #FFF0F5;
+            color: #6D214F;
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            padding: 35px 0px;
+            margin: 28px 0px;
+            border: 2px solid #6D214F;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px #6D214F40;
+        }
+        #skills h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 33px;
+            margin-top: 0;
+            top: -15px;
+            position: relative;
+        }
+        .divskills {
+            text-align: center;
+            margin-bottom: -30px;
+        }
+        .skills1, .skills2, .skills3, .skills4, .skills5 {
+            display: inline-block;
+            color: #6D214F;
+            border: 2px solid #6D214F;
+            border-radius: 15px;
+            padding: 6px 18px;
+            margin: 7px;
+            margin-top: 0;
+            top: -25px;
+            font-family: Georgia, serif;
+            position: relative;
+        }
+        .skills1:hover, .skills2:hover, .skills3:hover, .skills4:hover, .skills5:hover {
+            border-radius: 15px;
+            box-shadow: 0 0 20px #6D214F;
+        }
+        #projects {
+            background-color: #FFF0F5;
+            color: #6D214F;
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            padding: 30px;
+            margin: 28px 0px;
+            border: 2px solid #6D214F;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px #6D214F40;
+        }
+        #projects h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 33px;
+            margin-top: 0;
+            top: -15px;
+            position: relative;
+        }
+        .project1, .project2, .project3 {
+            display: inline-block;
+            margin: 10px;
+            top: -25px;
+            padding: 20px;
+            background-color: #FFD1DC;
+            border: 3px solid #6D214F;
+            border-radius: 15px;
+            position: relative;
+        }
+        .project1 img, .project2 img, .project3 img {
+            width: 250px;
+            height: 250px;
+            border-radius: 10px;
+        }
+        .project1 p, .project2 p, .project3 p {
+            text-align: center;
+            font-size: 15px;
+            margin: 5px 0 0;
+            max-width: 250px;
+        }
+        #contacts {
+            background-color: #FFF0F5;
+            color: #6D214F;
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            padding: 25px;
+            border: 2px solid #6D214F;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px #6D214F40;
+            flex-direction: column;
+        }
+        #contacts h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 33px;
+            margin-top: 0;
+            top: -15px;
+            width: 100%;
+            position: relative;
+        }
+        .contacts {
+            display: inline-block;
+            text-align: left;
+            padding: 0px 25px;
+            top: -26px;
+            background-color: #FFD1DC;
+            border: 2px solid #6D214F;
+            border-radius: 15px;
+            position: relative;
+        }
+        .contacts p {
+            color: #6D214F;
+            font-size: 16px;
+            margin: 15px 0;
+        }
+        .contacts a {
+            color: #783B55;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contacts a:hover {
+            color: #FFF0F5;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="profile"></div>
+        <div class="name">Azul, Chessa Mae O.</div>
+        <div class="welcome">WELCOME TO MY PORTFOLIO! ⸜(｡˃ ᵕ ˂ )⸝♡</div>
+        <div class="it">I'm a slightly IT Developer :P <br> Creating, learning, and growing everyday! ◝(ᵔᵕᵔ)◜</div>
+    </header>
+
+    <nav>
+        <a href="#"><b>HOME</b></a>
+        <a href="#about"><b>ABOUT ME</b></a>
+        <a href="#skills"><b>MY SKILLS</b></a>
+        <a href="#projects"><b>MY PROJECTS</b></a>
+        <a href="#contacts"><b>CONTACTS</b></a>
+    </nav>
+
+    <section id="home">
+
+    </section>
+
+    <section id="about">
+        <h2>ALL ABOUT ME!</h2>
+        <p>Hi! I'm Chessa, and I'm 20 years old thats lives in Don Fabian. I love pink, and also doing nothing. I fear my future more than anything. However, I'm interested in finding peace and happiness in life— also in designing but not in technology.. :PP But I learn to enjoy what I have and what I'm doing. May we all find peace and happiness in life! <br>
+           <br> Moving on, I'm a 2nd year college in Datamex College of Saint Adeline; programmed in Associate in Computer Technology
+            <br> And my hobbies? I like to do nothing hehe (˶>⩊<˶) kidding aside, I like taking pictures of skies and clouds, collecting pink things! And I like making cards! OOHH, I ALSO LOVE BAKING ♡⸜(˶˃ ᵕ ˂˶)⸝♡
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>MY SKILLS</h2>
+        <div class="divskills">
+            <div class="skills1">HTML</div>
+            <div class="skills2">CSS</div>
+            <div class="skills3">JAVASCRIPT</div>
+            <div class="skills4">C++</div>
+            <div class="skills5">PYTHON</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>MY PROJECTS</h2>
+        <div class="project1">
+            <img src="project1.jpg">
+            <p> <b>TASK MANAGEMENT SYSTEM</b>
+                <br>This is the System I made in Python. It was made for organizing your task and works. I used IDLE Python.
+            </p>
+        </div>
+        <div class="project2">
+            <img src="project2.jpg">
+            <p> <b>REGISTER FORM</b>
+                <br>I made this using HTML and CSS. This is used for Registration. I used Visual Studio Code.
+            </p>
+        </div>
+        <div class="project3">
+            <img src="project3.jpg">
+            <p> <b>STUDENT INFORMATION</b>
+                <br>This is where you put your information as a student. I used Micrsoft Visual Studio.
+            </p>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <h2>CONTACT ME</h2>
+        <div class="contacts">
+        <p>Email: <a href="#">chessaazul085@gmail.com</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/share/1FFrvftJ8W/">Chessa Azul</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/chsazl_?mdxt=MW1lZmtmb2hjOGpxMA==">chsazul_</a></p>
+        </div>
+    </section>
+</body>
+</html>
